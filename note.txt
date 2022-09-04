@@ -1,0 +1,5 @@
+per generare db:
+
+flask db init
+flask db migrate
+dlask db upgrade

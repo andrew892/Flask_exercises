@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{ title }}</title>
+    {% else %}
+      <title>Default Title</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Microblog: <a href={{ url_for('home') }}>Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
